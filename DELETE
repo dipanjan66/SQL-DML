@@ -1,0 +1,12 @@
+-- DELETE Syntax ⇒ Remove perticular Row from Table
+
+
+DELETE FROM table_name 
+WHERE condition;
+
+--===============================================
+
+--Example:-
+
+DELETE from account
+WHERE user_id = 3;
