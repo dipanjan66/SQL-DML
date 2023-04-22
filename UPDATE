@@ -1,0 +1,21 @@
+-- UPDATE Syntax:-
+
+
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+--==============================================
+
+--Example 01:---------
+
+UPDATE account
+SET last_login = CURRENT_TIMESTAMP
+
+
+
+--Example 02:---------
+
+UPDATE account
+SET username = 'Rakesh', password = 'pass24'
+WHERE user_id = 2;
