@@ -1,0 +1,48 @@
+-- INSERT INTO - Syntax:==>
+
+
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES 
+(value1, value2, value3, ...)
+(value1, value2, value3, ...)
+;
+
+OR
+-- Don't have to mention column name:------
+
+INSERT INTO table_name
+VALUES 
+(value1, value2, value3, ...)
+(value1, value2, value3, ...)
+;
+
+--==============================================
+-- account Table was created:-
+
+CREATE TABLE account(
+	user_id SERIAL PRIMARY KEY,
+	username varchar(50) UNIQUE NOT NULL,
+	password varchar(50) NOT NULL,
+	email varchar(250) NOT NULL,
+	created_on TIMESTAMP NOT NULL,
+	last_login TIMESTAMP
+)
+
+
+--==================================================
+-- Example:- insert into
+
+-- Insert into account Table
+
+-- user_id column is SERIAL Data type, So I don't need to provide that
+
+select * from account
+
+
+insert into account(username, password, email, created_on)
+values
+('jose', 'password', 'das@gmail.com', CURRENT_TIMESTAMP),
+('mahesh', 'password45', 'mahesh@gmail.com', CURRENT_TIMESTAMP),
+('prity', 'password89', 'prity@gmail.com', CURRENT_TIMESTAMP)
+
+
